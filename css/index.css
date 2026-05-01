@@ -1,0 +1,277 @@
+:root{
+    --primary-color: #1f2020;
+    --secondary-color: #facc15;
+    --container-color: #1f1e1e;
+    --text-color: #e9e9e9;
+}
+*{
+    font-family: roboto, open-sans, sans-serif, Arial, Helvetica, sans-serif;
+     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:#0c0c0c;
+    color: var(--text-color);
+}
+/*menu de navegação*/
+
+.menu{
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    font-size: 13px;
+    position: fixed;
+    width: 100%;
+}
+
+.menu-list{
+    color: var(--text-color);
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin-left: auto;
+    padding-right: 25px;
+    cursor: pointer;
+}
+
+.menu-btn{
+    background-color: var(--secondary-color);
+    padding: 10px 15px;
+    border-radius: 8px;
+    border-style: none;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.menu-btn:hover{
+    background-color: #c9a205;
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+/*style do hero*/
+.hero{
+    background-image: url(../img/teste\ img\ hero\ 1.png);
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: var(--text-color);
+}
+
+.hero h1{
+    font-family:sekuya, notable, roboto;
+    font-size: 50px;
+}
+
+.hero p{
+    font-size: 20px;
+}   
+
+.btn-container{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.btn-hero{
+    background-color: var(--secondary-color);
+    padding: 10px 25px;
+    border-radius: 8px;
+    border-style: none;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.btn-hero:hover{
+    background-color: #c9a205;
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+.divisor{
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+}
+.divisor::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform:translateX(-50%);
+    width: 60%;
+    height: 1.5px;
+    background-color: var(--text-color);
+}
+#versiculo{
+    text-align: center;
+    font-size: 30px;
+    margin:10px 40px;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    font-weight: bold;
+}
+#versiculo span{
+    color: var(--secondary-color);
+}
+
+/*style da seção de informações*/
+.quem-somos{
+    background-color: var(--container-color);
+    margin: 60px;
+    margin-top: 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 200px;
+    height: 200px;
+}
+
+.quem-somos img{
+    width: 250px;
+    height: 150px;
+    border-radius: 8px;
+    margin-left: 40px;
+}   
+
+#container-quemsomos{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+
+    }
+
+.btn-saibamais{
+    background-color: var(--secondary-color);
+    padding: 10px 15px;
+    border-radius: 8px;
+    border-style: none;
+    font-weight: bold;
+    font-size: 13px;
+    width: 150px;
+}
+
+.btn-saibamais:hover{
+    background-color: #c9a205;
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+
+
+.cultos{
+    background-color: var(--container-color);
+    margin: 60px;
+    margin-top: 50px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 200px;
+    height: 200px;
+    padding: 20px;
+}
+
+.cultos h2{
+    margin-left: 20px;
+    font-size: 30px;
+}
+
+.cultos div{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 20px;
+}
+
+.titulo-dias{
+    font-weight: bold;
+    font-size: 20px;
+    
+}   
+
+
+
+.ministerios{
+    background-color: var(--container-color);
+    margin: 60px;
+    margin-top: 50px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 200px;
+    height: 200px;
+}
+
+#container-ministerios{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+
+}
+
+.ministerios img{
+    width: 250px;
+    height: 150px;
+    border-radius: 8px;
+    margin-left: 40px;
+}
+
+/*style do endereço*/
+.endereco{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-bottom: 50px;
+    
+}
+.endereco h2{
+    font-size: 40px;
+}
+.endereco p{
+    font-size: 20px;
+}
+#div-endereco{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+/*style do footer*/
+#divisor-footer{
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+}
+
+#divisor-footer::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform:translateX(-50%);
+    width: 90%;
+    height: 1.5px;
+    background-color: var(--text-color);
+
+}
+.rodape{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
