@@ -35,8 +35,13 @@ body{
     margin-left: auto;
     padding-right: 25px;
     cursor: pointer;
+    
 }
 
+.menu-btn a{
+    text-decoration: none;
+    color:#0c0c0c
+}
 .menu-btn{
     background-color: var(--secondary-color);
     padding: 10px 15px;
@@ -89,13 +94,36 @@ body{
     font-weight: 500;
     font-size: 13px;
 }
+.btn-hero a{
+    text-decoration: none;
+    color:black;
+}
 
 .btn-hero:hover{
     background-color: #c9a205;
     transition: 0.1s;
     cursor: pointer;
 }
+.btn-youtube{
+    display: flex;
+    align-items: center;
+    
+}
+.btn-youtube a{
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 13px;
+    text-decoration: none;
+    color: var(--text-color);
+}
+.btn-youtube a:hover{
+    transform: scale(1.05);
+    transition: 0.1s;
+    cursor: pointer;
 
+}
 .divisor{
     text-align: center;
     color: white;
@@ -229,7 +257,7 @@ body{
 }
 
 /*style do endereço*/
-.endereco{
+#endereco{
     margin-top: 25px;
     display: flex;
     justify-content: center;
@@ -237,10 +265,10 @@ body{
     margin-bottom: 50px;
     
 }
-.endereco h2{
+#endereco h2{
     font-size: 40px;
 }
-.endereco p{
+#endereco p{
     font-size: 20px;
 }
 #div-endereco{
