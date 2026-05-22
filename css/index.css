@@ -19,8 +19,18 @@ body{
 .span{
     color: var(--secondary-color);
 }
-/*menu de navegação*/
 
+img{
+    max-width: 100%;
+    display: block;
+}
+
+
+/*menu de navegação*/
+.menu-hamburguer{
+    display: none;
+    
+}
 .menu{
     background-color: var(--background-color);
     display: flex;
@@ -72,7 +82,8 @@ body{
     background-image: url(../img/teste\ img\ hero\ 1.png);
     background-position: center;
     background-size: cover;
-    height: 600px;
+    min-height: 90vh;
+    padding: 120px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -167,7 +178,8 @@ body{
     border-radius: 8px;
     display: flex;
     align-items: center;
-    gap: 200px;
+    justify-content: center;
+    gap: 40px;
     height: 200px;
 }
 
@@ -226,7 +238,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 200px;
+    gap: 40px;
     height: 200px;
     padding: 20px;
 }
@@ -258,7 +270,8 @@ body{
     border-radius: 8px;
     display: flex;
     align-items: center;
-    gap: 200px;
+    justify-content: center;
+    gap: 40px;
     height: 200px;
 }
 
@@ -284,7 +297,7 @@ body{
     width: 250px;
     height: 150px;
     border-radius: 8px;
-    margin-left: 40px;
+   
 }
 
 /*style do endereço*/
@@ -313,6 +326,11 @@ body{
 #div-endereço span{
     color: var(--secondary-color);
 }
+iframe{
+    width: 100%;
+    max-width: 600px;
+}
+
 /*style sessão App*/
 .app{
     margin-top: 35px;
@@ -373,4 +391,84 @@ body{
     gap: 60px;
     margin-top: 60px;
     margin-bottom: 20px;
+}
+
+/*responsividade MEDIA QUERY*/
+
+@media (max-width: 768px){
+.menu{
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.menu-hamburguer{
+    display: block;
+    background-color: var(--background-color);
+    border: none;
+
+}
+.menu-list.active{
+    display: flex;
+}
+.menu-list{
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.menu-btn{
+    display: none;
+}
+ .divisor::before{
+    display: none;
+ }
+ 
+.hero{
+    text-align: center;
+    padding: 140px 20px;
+   
+}
+.hero h1{
+    font-family: roboto, open-sans, sans-serif, Arial, Helvetica, sans-serif;
+}
+.btn-container{
+    flex-direction: column;
+    width: 100%;
+}
+
+.quem-somos,
+.ministerios,
+.cultos,
+.app,
+#endereco{
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    gap: 30px;
+    padding: 30px 20px;
+}
+
+.mapa{
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+}
+
+#div-badges{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.app{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rodape{
+    flex-direction: column;
+    gap: 10px;
+}
 }
