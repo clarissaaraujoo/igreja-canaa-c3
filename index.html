@@ -32,14 +32,24 @@
     <main>
         <nav class="menu">
             <img src="img/Logo - Igreja Canaã - Branco.png" alt="Logo Igreja Canaã C3" width="100px" class="logo">
+
+            <button class="menu-hamburguer">
+
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none"  width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="white">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+
+            </button>
             <ul class="menu-list">
-                <li><a href="../index.html"></a>Inicio</li>
-                <li>Sobre nós</li>
-                <li>Cultos</li>
-                <li>Contato</li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pages/sobrenos.html">Sobre Nós</a></li>
+                <li><a href="pages/cultos.html">Cultos</a></li>
+                <li><a href="#">Dízimo</a></li>
                 <li><a href="pages/ministerios.html">Ministérios</a></li>
             </ul>
-            <button class="menu-btn"><a href="pages/endereco.html">Como chegar?</a></button>
+            <a class="menu-btn" href="pages/endereco.html">Como chegar?</a>
         </nav>
 
         <section class="hero">
@@ -47,7 +57,7 @@
             <p>Bem vindo a Igreja Canaã C3</p>
 
             <div class="btn-container">
-                <button class="btn-hero"><a href="pages/endereco.html">Quero visitar</a></button>
+                <a class="btn-hero" href="pages/endereco.html">Quero visitar</a>
 
                 <div class="btn-youtube">
                     <a href="https://www.youtube.com/@IgrejaCana%C3%A3C3" target="_blank">
@@ -59,12 +69,11 @@
                     </a>
                 </div>
 
-
             </div>
         </section>
         <div class="divisor">
             <p id="versiculo">"Eu sou a luz do mundo; quem me segue não andará em trevas, mas terá a luz da vida." -
-                <span>João 8:12</span>
+                <span class="span">João 8:12</span>
             </p>
         </div>
         <section class="info">
@@ -73,48 +82,69 @@
                 <div id="container-quemsomos">
                     <h2>Quem somos?</h2>
                     <p>Um igreja comprometida em transformar vidas através do amor de Deus. </p>
-                    <button class="btn-saibamais">Saiba mais</button>
+                    <a class="btn-saibamais" href="pages/sobrenos.html">Saiba mais</a>
                 </div>
 
             </div>
 
             <div class=" cultos">
-                        <h2>Nossos cultos</h2>
-                        <div>
-                            <p class="titulo-dias">Domingo</p>
-                            <p>10:00</p>
-                            <p>18:00</p>
-                        </div>
-                        <div>
-                            <p class="titulo-dias">Quarta-feira</p>
-                            <p>19:30</p>
-                        </div>
-                        <button class="btn-saibamais">Saiba mais</button>
+                <h2>Nossos cultos</h2>
+                <div>
+                    <p class="titulo-dias">Domingo</p>
+                    <p>10:00</p>
+                    <p>18:00</p>
                 </div>
+                <div>
+                    <p class="titulo-dias">Quarta-feira</p>
+                    <p>19:30</p>
+                </div>
+                <a class="btn-saibamais" href="/pages/cultos.html">Saiba mais</a>
+            </div>
 
-                <div class="ministerios">
-                    <img src="img/img teste 2.jpeg" alt="imagem de um culto da Igreja Canaã C3">
-                    <div id="container-ministerios">
-                        <h2>Nossos ministérios</h2>
-                        <p>Cada pessoa tem um propósito e um lugar para servir, conheça nossos ministérios.</p>
-                        <button class="btn-saibamais">Saiba mais</button>
-                    </div>
+            <div class="ministerios">
+                <img src="img/img teste 2.jpeg" alt="imagem de um culto da Igreja Canaã C3">
+                <div id="container-ministerios">
+                    <h2>Nossos ministérios</h2>
+                    <p>Cada pessoa tem um propósito e um lugar para servir, conheça nossos ministérios.</p>
+                    <a class="btn-saibamais" href="pages/ministerios.html">Saiba mais</a>
                 </div>
+            </div>
 
         </section>
         <div class="divisor">
             <section id="endereco">
                 <div id="div-endereco">
-                    <h2>Nosso endereço</h2>
-                    <p>R Barão de Souza Leão - 1120 - Boa Viagem - Recife/PE</p>
+                    <h2>Nosso <span class="span">Endereço</span></h2>
+                    <p>Rua Barão de Souza Leão - 1120 - Boa Viagem - Recife/PE</p>
                 </div>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.702800474096!2d-34.91201342383556!3d-8.131709186965146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1e3477499853%3A0xaf3fc67104618b2e!2sR.%20Bar%C3%A3o%20de%20Souza%20Le%C3%A3o%2C%201120%20-%20Boa%20Viagem%2C%20Recife%20-%20PE%2C%2051030-300!5e0!3m2!1spt-BR!2sbr!4v1777664763503!5m2!1spt-BR!2sbr"
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
             </section>
         </div>
+        <div class="divisor">
 
+            <section class="app">
+                <img src="img/app.igrejacanaa.png" alt="Imagem do aplicativo da Igreja Canaã C3" width="300px"
+                    class="img-app">
+
+                <div class="div-app">
+                    <h2>Baixe nosso <span class="span">Aplicativo</span></h2>
+                    <p>Nos leve com você para qualquer lugar!</p>
+                    <div id="div-badges">
+                        <a href="https://apps.apple.com/us/app/igreja-canaã-c3/id1623610494" target="_blank"><img
+                                src="img/app-store-black.svg" alt="App Store"></a>
+                        <a
+                            href="https://play.google.com/store/apps/details?id=com.inpeaceapp.igrejacanaa.pe&pcampaignid=web_share" target="_blank"><img
+                                src="img/app-googleplay.png" alt="App Google Play"></a>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
         <div id="divisor-footer">
             <footer class="rodape">
                 <p>© 2026 - All Rights Reserved</p>
@@ -123,6 +153,7 @@
         </div>
     </main>
 
+    <script src="js/menu.js"></script>
 </body>
 
 </html>
