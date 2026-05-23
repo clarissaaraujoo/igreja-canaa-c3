@@ -396,6 +396,7 @@ iframe{
 /*responsividade MEDIA QUERY*/
 
 @media (max-width: 768px){
+    
 .menu{
     align-items: center;
     padding: 20px;
