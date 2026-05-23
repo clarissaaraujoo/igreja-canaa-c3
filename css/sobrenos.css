@@ -1,14 +1,9 @@
 :root{
     --primary-color: #1f2020;
     --secondary-color: #facc15;
-    --container-color: #1f1e1e;
+    --container-color: #12151b;
     --text-color: #e9e9e9;
-}
-*{
-    font-family: roboto, open-sans, sans-serif, Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    --background-color: #0c0c0c;
 }
 *{
     font-family: roboto, open-sans, sans-serif, Arial, Helvetica, sans-serif;
@@ -17,11 +12,27 @@
     box-sizing: border-box;
 }
 body{
-    background-color:#0c0c0c;
+    background-color: var(--background-color);
     color: var(--text-color);
 }
+
+.span{
+    color: var(--secondary-color);
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+
+/*menu de navegação*/
+.menu-hamburguer{
+    display: none;
+    
+}
 .menu{
-    background-color: var(--primary-color);
+    background-color: var(--background-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,6 +41,7 @@ body{
     position: fixed;
     width: 100%;
 }
+
 .menu-list{
     color: var(--text-color);
     list-style: none;
@@ -39,21 +51,100 @@ body{
     padding-right: 25px;
     cursor: pointer;
 }
+.menu-list a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.menu-list a:hover{
+    color: var(--secondary-color);
+}
 
 .menu-btn{
+    text-decoration: none;
+    border: 1px solid var(--secondary-color); 
+    color: var(--secondary-color); 
+    background-color: var(--background-color);
+    padding: 8px 15px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.menu-btn:hover{
+    background-color: var(--secondary-color); 
+    color:#0c0c0c;
+}
+
+
+/*style do hero*/
+.hero{
+    background-image: url(../img/teste\ img\ hero\ 1.png);
+    background-position: center;
+    background-size: cover;
+    min-height: 90vh;
+    padding: 120px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: var(--text-color);
+}
+
+.hero h1{
+    font-family:sekuya, notable, roboto;
+    font-size: 50px;
+}
+
+.hero p{
+    font-size: 20px;
+}   
+
+.btn-container{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.btn-hero{
     background-color: var(--secondary-color);
-    padding: 10px 15px;
+    padding: 10px 25px;
     border-radius: 8px;
     border-style: none;
     font-weight: bold;
     font-size: 13px;
+    text-decoration: none;
+    color:black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.menu-btn:hover{
-    background-color: #c9a205;
+.btn-hero:hover{
+    background-color: #a98a12;
     transition: 0.1s;
     cursor: pointer;
 }
+
+
+
+.divisor{
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+}
+.divisor::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform:translateX(-50%);
+    width: 60%;
+    height: 1.5px;
+    background-color: var(--text-color);
+}
+
 
 .hero{
     background-image: url(../img/teste\ img\ hero\ 1.png);
