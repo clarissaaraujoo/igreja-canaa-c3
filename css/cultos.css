@@ -258,5 +258,9 @@ body{
         gap: 20px;
         padding: 20px 0;
     }
-    
+    .titulo{
+        text-align: center;
+        padding: 140px 20px;
+
+    }
 }
