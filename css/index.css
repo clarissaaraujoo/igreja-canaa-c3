@@ -1,12 +1,13 @@
 :root{
-    --primary-color: #1f2020;
-    --secondary-color: #facc15;
-    --container-color: #12151b;
-    --text-color: #e9e9e9;
-    --background-color: #0c0c0c;
+    --light-gray: #898989;
+    --dark-gray: #545454;
+    --dark-brown: #683c11;
+    --light-brown: #936037;
+    --text-color: black;
+    --background-color: #fefbee;
 }
 *{
-    font-family: roboto, open-sans, sans-serif, Arial, Helvetica, sans-serif;
+    font-family: roboto, sans-serif, Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -17,7 +18,7 @@ body{
 }
 
 .span{
-    color: var(--secondary-color);
+    color: var(--dark-brown);
 }
 
 img{
@@ -37,7 +38,7 @@ img{
     justify-content: space-between;
     align-items: center;
     font-weight: 600;
-    font-size: 13px;
+    font-size: 15px;
     position: fixed;
     width: 100%;
 }
@@ -57,13 +58,13 @@ img{
 }
 
 .menu-list a:hover{
-    color: var(--secondary-color);
+    color: var(--dark-brown);
 }
 
 .menu-btn{
     text-decoration: none;
-    border: 1px solid var(--secondary-color); 
-    color: var(--secondary-color); 
+    border: 1px solid var(--dark-brown); 
+    color: var(--dark-brown); 
     background-color: var(--background-color);
     padding: 8px 15px;
     border-radius: 6px;
@@ -72,14 +73,13 @@ img{
 }
 
 .menu-btn:hover{
-    background-color: var(--secondary-color); 
-    color:#0c0c0c;
+    border: 2px solid var(--dark-brown);
 }
 
 
 /*style do hero*/
 .hero{
-    background-image: url(../img/teste\ img\ hero\ 1.png);
+    background-image: url(../img/nova-heroimg.jpg);
     background-position: center;
     background-size: cover;
     min-height: 90vh;
@@ -89,16 +89,18 @@ img{
     justify-content: center;
     align-items: center;
     gap: 20px;
-    color: var(--text-color);
+    color: white;
 }
 
 .hero h1{
-    font-family:sekuya, notable, roboto;
+    font-family: notable, roboto;
     font-size: 50px;
 }
 
 .hero p{
     font-size: 20px;
+    font-weight: bolder;
+
 }   
 
 .btn-container{
@@ -108,14 +110,14 @@ img{
 }
 
 .btn-hero{
-    background-color: var(--secondary-color);
-    padding: 10px 25px;
+    background-color: transparent;
+    padding: 4px 16px;
     border-radius: 8px;
-    border-style: none;
+    border: none;
     font-weight: bold;
     font-size: 13px;
     text-decoration: none;
-    color:black;
+    color: white;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -123,7 +125,7 @@ img{
 }
 
 .btn-hero:hover{
-    background-color: #a98a12;
+    transform: scale(1.05);
     transition: 0.1s;
     cursor: pointer;
 }
@@ -139,7 +141,7 @@ img{
     font-weight: bold;
     font-size: 13px;
     text-decoration: none;
-    color: var(--text-color);
+    color: white;
 }
 .btn-youtube a:hover{
     transform: scale(1.05);
@@ -149,7 +151,7 @@ img{
 }
 .divisor{
     text-align: center;
-    color: white;
+    color: var(--light-brown);
     padding-top: 30px;
 }
 .divisor::before {
@@ -158,8 +160,8 @@ img{
     left: 50%;
     transform:translateX(-50%);
     width: 60%;
-    height: 1.5px;
-    background-color: var(--text-color);
+    height: 2.5px;
+    background-color: var(--dark-brown);
 }
 #versiculo{
     text-align: center;
@@ -171,8 +173,9 @@ img{
 }
 
 /*style da seção de informações*/
-.quem-somos{
-    background-color: var(--container-color);
+.container{
+    color: black;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);   
     margin: 60px;
     margin-top: 20px;
     border-radius: 8px;
@@ -183,7 +186,7 @@ img{
     height: 200px;
 }
 
-.quem-somos img{
+.container img{
     width: 250px;
     height: 150px;
     border-radius: 8px;
@@ -207,9 +210,9 @@ img{
 
 .btn-saibamais{
     text-decoration: none;
-    color: var(--secondary-color);
-    background-color: var(--container-color);
-    border: 2px solid var(--secondary-color);
+    color: var(--dark-brown);
+    background-color: var(--background-color);
+    border: 2px solid var(--dark-brown);
     padding: 10px 15px;
     border-radius: 8px;
     font-weight: bold;
@@ -222,8 +225,7 @@ img{
 }
 
 .btn-saibamais:hover{
-    background-color: #c9a205;
-    color:#0c0c0c;
+    transform: translateY(-2px);
     transition: 0.1s;
     cursor: pointer;
 }
@@ -231,7 +233,8 @@ img{
 
 
 .cultos{
-    background-color: var(--container-color);
+    color: black;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
     margin: 60px;
     margin-top: 50px;
     border-radius: 8px;
@@ -261,20 +264,6 @@ img{
     
 }   
 
-
-
-.ministerios{
-    background-color: var(--container-color);
-    margin: 60px;
-    margin-top: 50px;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-    height: 200px;
-}
-
 #container-ministerios{
     text-align: center;
     display: flex;
@@ -293,12 +282,7 @@ img{
 
 }
 
-.ministerios img{
-    width: 250px;
-    height: 150px;
-    border-radius: 8px;
-   
-}
+
 
 /*style do endereço*/
 #endereco{
@@ -324,12 +308,13 @@ img{
 }
 
 #div-endereço span{
-    color: var(--secondary-color);
+    color: var(--dark-brown);
 }
-iframe{
+.mapa{
     width: 100%;
     max-width: 600px;
 }
+
 
 /*style sessão App*/
 .app{
@@ -368,10 +353,37 @@ iframe{
     transform: scale(1.03);
 }
 
+/*styles da sessão redes sociais*/
+.section-redessociais h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.section-redessociais{
+    margin-top: 30px;
+    
+}
+.container-redessociais{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 60px;
+   
+}
+
+
+.container.rede{
+    text-decoration: none;
+}
+
+.container-rede:hover{
+    transform: scale(1.05);
+}
 /*style do footer*/
 #divisor-footer{
     text-align: center;
-    color: white;
+    color: var(--light-gray);
     padding-top: 20px;
 }
 
@@ -396,7 +408,10 @@ iframe{
 /*responsividade MEDIA QUERY*/
 
 @media (max-width: 768px){
-    
+
+.logo{
+    width:100px;
+}
 .menu{
     align-items: center;
     padding: 20px;
@@ -412,6 +427,7 @@ iframe{
 .menu-list.active{
     display: flex;
 }
+
 .menu-list{
     display: none;
     flex-direction: column;
@@ -437,22 +453,29 @@ iframe{
     font-family: roboto, open-sans, sans-serif, Arial, Helvetica, sans-serif;
 }
 .btn-container{
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
     width: 100%;
 }
 
-.quem-somos,
-.ministerios,
+.container,
 .cultos,
 .app,
-#endereco{
+#endereco,
+.section-redessociais{
     flex-direction: column;
     height: auto;
     text-align: center;
     gap: 30px;
     padding: 30px 20px;
 }
+.img-app{
+    display:none;
+}
 
+.container img{ 
+    display: none;
+}
 .mapa{
     width: 100%;
     max-width: 600px;
@@ -467,6 +490,10 @@ iframe{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.container-redessociais{
+    gap:15px;
 }
 .rodape{
     flex-direction: column;
