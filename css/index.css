@@ -79,7 +79,7 @@ img{
 
 /*style do hero*/
 .hero{
-    background-image: url(../img/nova-heroimg.jpg);
+    background-image: url(../img/hero-image.png);
     background-position: center;
     background-size: cover;
     min-height: 90vh;
@@ -95,6 +95,7 @@ img{
 .hero h1{
     font-family: notable, roboto;
     font-size: 50px;
+
 }
 
 .hero p{
@@ -230,41 +231,24 @@ img{
     cursor: pointer;
 }
 
-
-
-.cultos{
-    color: black;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-    margin: 60px;
-    margin-top: 50px;
-    border-radius: 8px;
+#container-cultos{
+   text-align: center;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
     gap: 40px;
-    height: 200px;
-    padding: 20px;
+    padding-left: 100px;
 }
 
-.cultos h2{
-    margin-left: 20px;
+#container-cultos h2{
     font-size: 30px;
 }
 
-.cultos div{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    margin-left: 20px;
+#container-cultos p{
+    font-size: 18px;
 }
 
-.titulo-dias{
-    font-weight: bold;
-    font-size: 25px;
-    
-}   
-
-#container-ministerios{
+#container-missao{
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -273,11 +257,11 @@ img{
 
 }
 
-#container-ministerios h2{
+#container-missao h2{
     font-size: 30px;
 }
 
-#container-ministerios p{
+#container-missao p{
     font-size: 18px;
 
 }
@@ -456,6 +440,9 @@ img{
     flex-direction: row;
     justify-content: center;
     width: 100%;
+}
+#container-cultos{
+  padding: 0 20px;
 }
 
 .container,
