@@ -41,6 +41,8 @@ main h1{
     font-size: 15px;
     position: fixed;
     width: 100%;
+    border-bottom: 2px solid var(--light-gray);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .menu-list{
@@ -85,18 +87,111 @@ main h1{
 ========================= */
 .hero{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    text-align: center;
-    padding: 120px 20px;
-    padding-bottom: 100px;
+    gap: 500px;
+    padding: 100px 25px 50px;
+    flex-wrap: wrap;
 }
-.hero h1{
-    font-size: 50px;
-    margin-bottom: 20px;
+.hero-image{
+    width: 45%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 48%;
+    max-width: 500px;
+}
+.hero-text h1{
+    font-size: 60px;
+    font-weight: bold;
+    color: var(--light-brown);
 }
 .hero p{
-    font-size: 18px;
+    font-size: 25px;
     max-width: 600px;
+}
+
+
+/* =========================
+   Missão Semente
+========================= */
+.Sobre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 50px 20px;
+    font-size: 30px;
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+}
+.objetivo{
+    font-size: 30px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    color: #545454;
+    padding-top: 60px;
+    margin: 50px 200px;
+    border-top: var(--light-brown) 2px solid;
+}
+
+.ajude{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 20px;
+}
+.ajude h1{
+    font-size: 40px;
+    color: var(--text-color);
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.formas-ajuda{
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 60px;
+    width: 60%;
+    margin-top: 20px;
+}
+.ajude .formas{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex: 1;
+    gap: 15px;
+    border: var(--light-brown) 3px outset;
+    border-radius: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    min-height: 100%;
+}
+.ajude .formas h1{
+    margin-bottom: 10px;
+    color: var(--light-brown);
+}
+.formas p{
+    font-size: 20px;
+}
+.ajude .formas p,
+.ajude .formas .descricao p{
+    line-height: 1.6;
+}
+.formas:hover{
+    transform: translateY(-5px);
+    transition: 0.1s;
+    cursor: pointer;
 }
