@@ -79,8 +79,8 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 40px;
-    padding: 100px 25px 50px;
+    gap: 15px;
+    padding: 100px 20px 20px;
 }
 
 
@@ -102,8 +102,9 @@ body{
 }
 
 .hero-title p{
-    color: var(--text-color);
+    color: var(--light-brown);
     font-size: 18px;
+
 }
 
 .hero-image{
@@ -241,3 +242,85 @@ body{
     
 
 }
+
+/*responsividade MEDIA QUERY*/
+
+@media (max-width: 768px){
+
+.logo{
+    width:100px;
+}
+
+.menu{
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.menu-hamburguer{
+    display: block;
+    background-color: var(--background-color);
+    border: none;
+
+}
+
+
+.menu-list.active{
+    display: flex;
+}
+
+.menu-list{
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.menu-btn{
+    display: none;
+}
+
+
+.hero-image{
+    display: none;
+}
+
+.cultos-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-cultos{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    gap: 20px;
+    width: 90%;
+    height: 90%;
+}
+.online-title{
+    margin: 10px;
+}
+
+.online-section{
+    flex-direction:column-reverse;
+    gap: 30px;
+
+}
+
+.online-section iframe{
+    height: max-content;
+    width: max-content;
+
+}
+.rodape{
+    flex-direction: column;
+    gap: 10px;
+}
+}
+
+
