@@ -211,7 +211,7 @@ main h1{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: left;
     gap: 10px;
     padding: 20px 10px;
     margin: 50px 200px;
@@ -219,7 +219,7 @@ main h1{
 }
 
 .conclusao .p1{
-    font-size: 25px;
+    font-size: 30px;
     line-height: 1.6;
     color: var(--text-color);
     align-items: center;
@@ -229,7 +229,7 @@ main h1{
     padding: 30px;
 }
 .conclusao .p2{
-    font-size: 25px;
+    font-size: 30px;
     line-height: 1.6;
     color: var(--text-color);
     align-items: center;
@@ -239,7 +239,7 @@ main h1{
     padding: 30px;
 }
 .conclusao .p3{
-    font-size: 25px;
+    font-size: 30px;
     line-height: 1.6;
     color: var(--text-color);
     align-items: center;
@@ -249,7 +249,7 @@ main h1{
     padding: 30px;
 }
 .conclusao .p4{
-    font-size: 25px;
+    font-size: 30px;
     line-height: 1.6;
     color: var(--text-color);
     align-items: center;
@@ -291,4 +291,166 @@ main h1{
 .div-rodape a{
     text-decoration: none;
     padding: 15px;
+}
+
+@media (max-width: 768px){
+    .logo{
+        width: 100px;
+    }
+    .menu{
+        align-items: center;
+        padding: 20px;
+        gap: 20px;
+    }
+    .menu-hamburguer{
+        display: block;
+        background-color: var(--background-color);
+        border: none;
+    }
+    .menu-list.active{
+        display:flex;
+    }
+
+    .menu-list{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        gap: 20px;
+        padding: 20px 0;
+    }
+
+    .menu-btn{
+        display: none;
+    }
+
+    .hero{
+        flex-direction: column;
+        gap: 25px;
+        padding: 120px 20px 30px;
+    }
+
+    .hero-image{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .hero-text{
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .hero-text h1{
+        font-size: 40px;
+    }
+
+    .hero p{
+        font-size: 20px;
+    }
+
+    .Sobre{
+        width: 90%;
+        font-size: 22px;
+        padding: 30px 10px;
+    }
+
+    .objetivo{
+        margin: 30px 20px;
+        padding-top: 30px;
+        font-size: 24px;
+    }
+
+    .ajude{
+        flex-direction: column;
+        padding: 20px 15px 80px;
+    }
+
+    .formas-ajuda{
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .ajude .formas{
+        padding: 20px;
+        border-radius: 24px;
+    }
+
+    .ajude .formas h1{
+        font-size: 28px;
+    }
+
+    .formas p{
+        font-size: 18px;
+    }
+
+    .conclusaot{
+        margin: 30px 20px;
+        padding-top: 40px;
+        font-size: 28px;
+    }
+
+    .conclusao{
+        margin: 20px 15px;
+        padding: 10px 0 30px;
+    }
+
+    .conclusao .p1,
+    .conclusao .p2,
+    .conclusao .p3,
+    .conclusao .p4{
+        font-size: 20px;
+        margin: 0;
+        padding: 15px 0;
+    }
+}
+
+@media (max-width: 480px){
+    .menu{
+        padding: 12px 15px;
+    }
+
+    .logo{
+        width: 80px;
+    }
+
+    .hero{
+        padding: 110px 15px 25px;
+    }
+
+    .hero-text h1{
+        font-size: 32px;
+    }
+
+    .hero p{
+        font-size: 18px;
+    }
+
+    .Sobre{
+        font-size: 18px;
+        width: 95%;
+    }
+
+    .objetivo,
+    .conclusaot{
+        font-size: 20px;
+        margin: 20px 15px;
+    }
+
+    .ajude .formas h1{
+        font-size: 24px;
+    }
+
+    .formas p{
+        font-size: 16px;
+    }
+
+    .conclusao .p1,
+    .conclusao .p2,
+    .conclusao .p3,
+    .conclusao .p4{
+        font-size: 16px;
+        padding: 12px 0;
+    }
 }
