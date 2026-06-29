@@ -147,6 +147,7 @@ main h1{
     align-items: center;
     gap: 25px;
     padding: 20px;
+    padding-bottom: 170px;
 }
 .ajude h1{
     font-size: 40px;
@@ -192,6 +193,70 @@ main h1{
     transform: translateY(-5px);
     transition: 0.1s;
     cursor: pointer;
+}
+.conclusaot{
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--dark-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 90px;
+    border-top: var(--light-brown) 2px solid;
+    margin: 50px 500px;
+}
+.conclusao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    padding: 20px 10px;
+    margin: 50px 200px;
+    min-height: 100%;
+}
+
+.conclusao .p1{
+    font-size: 25px;
+    line-height: 1.6;
+    color: var(--text-color);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0 50px;
+    padding: 30px;
+}
+.conclusao .p2{
+    font-size: 25px;
+    line-height: 1.6;
+    color: var(--text-color);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0 50px;
+    padding: 30px;
+}
+.conclusao .p3{
+    font-size: 25px;
+    line-height: 1.6;
+    color: var(--text-color);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0 50px;
+    padding: 30px;
+}
+.conclusao .p4{
+    font-size: 25px;
+    line-height: 1.6;
+    color: var(--text-color);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0 50px;
+    padding: 30px;
 }
 
 /* =========================
