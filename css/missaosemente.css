@@ -102,6 +102,8 @@ main h1{
 .hero-text{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 15px;
     width: 48%;
     max-width: 500px;
@@ -111,21 +113,21 @@ main h1{
     font-weight: bold;
     color: var(--light-brown);
 }
-.hero p{
+.hero-subtitle{
     font-size: 25px;
-    max-width: 600px;
-}
-.Sobre{
-    display: flex;
-    justify-content: center;
+    max-width: 500px;
     align-items: center;
-    gap: 50px;
-    padding: 50px 20px;
-    font-size: 30px;
-    width: 70%;
-    text-align: center;
-    margin: 0 auto;
+    display: flex;
+    padding-bottom: 40px;
 }
+.hero-description{
+    font-size: 23px;
+    max-width: 700px;
+    text-align: center;
+    width: 200%;
+
+}
+
 /* =========================
    MISSÃO SEMENTE
 ========================= */
@@ -137,10 +139,41 @@ main h1{
     padding-bottom: 20px;
     color: #545454;
     padding-top: 60px;
-    margin: 50px 200px;
+    margin: 50px 500px;
     border-top: var(--light-brown) 2px solid;
 }
+.missao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    gap: 10px;
+    padding: 20px 10px;
+    margin: 50px 200px;
+    min-height: 100%;
+}
 
+.missao .p1{
+    font-size: 30px;
+    line-height: 1.6;
+    color: var(--text-color);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0 50px;
+    padding: 30px;
+}
+.missao .p2{
+    font-size: 30px;
+    line-height: 1.6;
+    color: var(--text-color);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0 50px;
+    padding: 30px;
+}
 .ajude{
     display: flex;
     justify-content: center;
@@ -195,7 +228,7 @@ main h1{
     cursor: pointer;
 }
 .conclusaot{
-    font-size: 50px;
+    font-size: 30px;
     font-weight: bold;
     color: var(--dark-gray);
     display: flex;
@@ -206,58 +239,8 @@ main h1{
     border-top: var(--light-brown) 2px solid;
     margin: 50px 500px;
 }
-.conclusao{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
-    gap: 10px;
-    padding: 20px 10px;
-    margin: 50px 200px;
-    min-height: 100%;
-}
 
-.conclusao .p1{
-    font-size: 30px;
-    line-height: 1.6;
-    color: var(--text-color);
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    margin: 0 50px;
-    padding: 30px;
-}
-.conclusao .p2{
-    font-size: 30px;
-    line-height: 1.6;
-    color: var(--text-color);
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    margin: 0 50px;
-    padding: 30px;
-}
-.conclusao .p3{
-    font-size: 30px;
-    line-height: 1.6;
-    color: var(--text-color);
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    margin: 0 50px;
-    padding: 30px;
-}
-.conclusao .p4{
-    font-size: 30px;
-    line-height: 1.6;
-    color: var(--text-color);
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    margin: 0 50px;
-    padding: 30px;
-}
+
 
 /* =========================
    FOOTER
@@ -293,7 +276,11 @@ main h1{
     padding: 15px;
 }
 
-@media (max-width: 768px){
+/* =========================
+   RESPONSIVIDADE
+========================= */
+@media (max-width: 768px) {
+    
     .logo{
         width: 100px;
     }
@@ -325,132 +312,85 @@ main h1{
     }
 
     .hero{
-        flex-direction: column;
-        gap: 25px;
-        padding: 120px 20px 30px;
+        gap: 30px;
+        padding: 90px 20px 40px;
     }
-
-    .hero-image{
-        width: 100%;
-        max-width: 100%;
-    }
-
+    .hero-image,
     .hero-text{
         width: 100%;
-        text-align: center;
+    }
+    .hero-text{
         align-items: center;
+        text-align: center;
     }
-
     .hero-text h1{
-        font-size: 40px;
+        text-align: center;
+        margin: 0 auto;
     }
-
-    .hero p{
-        font-size: 20px;
-    }
-
-    .Sobre{
-        width: 90%;
+    .hero-subtitle{
         font-size: 22px;
-        padding: 30px 10px;
+        padding-bottom: 20px;
     }
-
+    .hero-description{
+        max-width: 100%;
+        width: 100%;
+        padding: 0 10px;
+    }
+    .objetivo,
+    .conclusaot{
+        margin: 50px 30px;
+    }
     .objetivo{
-        margin: 30px 20px;
-        padding-top: 30px;
-        font-size: 24px;
+        font-size: 26px;
+        text-align: center;
     }
-
+    .missao{
+        margin: 40px 20px;
+        padding: 15px;
+    }
+    .missao .p1,
+    .missao .p2{
+        font-size: 22px;
+        margin: 0;
+        padding: 18px 0;
+    }
     .ajude{
-        flex-direction: column;
-        padding: 20px 15px 80px;
+        padding-bottom: 80px;
     }
-
     .formas-ajuda{
         flex-direction: column;
         width: 100%;
         gap: 20px;
     }
-
     .ajude .formas{
+        width: 100%;
         padding: 20px;
-        border-radius: 24px;
     }
-
-    .ajude .formas h1{
-        font-size: 28px;
+    .rodape{
+        padding: 20px;
+        gap: 15px;
     }
-
-    .formas p{
-        font-size: 18px;
-    }
-
-    .conclusaot{
-        margin: 30px 20px;
-        padding-top: 40px;
-        font-size: 28px;
-    }
-
-    .conclusao{
-        margin: 20px 15px;
-        padding: 10px 0 30px;
-    }
-
-    .conclusao .p1,
-    .conclusao .p2,
-    .conclusao .p3,
-    .conclusao .p4{
-        font-size: 20px;
-        margin: 0;
-        padding: 15px 0;
-    }
-}
-
-@media (max-width: 480px){
-    .menu{
-        padding: 12px 15px;
-    }
-
     .logo{
-        width: 80px;
+        width: 90px;
     }
-
-    .hero{
-        padding: 110px 15px 25px;
-    }
-
     .hero-text h1{
-        font-size: 32px;
+        font-size: 44px;
     }
-
-    .hero p{
+    .hero-subtitle{
+        font-size: 20px;
+    }
+    .hero-description{
         font-size: 18px;
     }
-
-    .Sobre{
-        font-size: 18px;
-        width: 95%;
-    }
-
     .objetivo,
     .conclusaot{
-        font-size: 20px;
-        margin: 20px 15px;
-    }
-
-    .ajude .formas h1{
         font-size: 24px;
+        margin: 40px 20px;
     }
-
-    .formas p{
-        font-size: 16px;
-    }
-
-    .conclusao .p1,
-    .conclusao .p2,
-    .conclusao .p3,
-    .conclusao .p4{
-        font-size: 16px;
-        padding: 12px 0;
+    .missao .p1,
+    .missao .p2{
+        font-size: 20px;
+        line-height: 1.7;
     }
 }
+
