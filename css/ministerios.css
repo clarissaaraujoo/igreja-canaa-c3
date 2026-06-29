@@ -1,65 +1,48 @@
-
-/* =========================
-   VARIÁVEIS DE CORES
-   ========================= */
 :root{
-    --primary-color: #1f2020;
-    --secondary-color: #facc15;
-    --container-color: #1f1e1e;
-    --text-color: #e9e9e9;
+    --light-gray: #898989;
+    --dark-gray: #545454;
+    --dark-brown: #683c11;
+    --light-brown: #936037;
+    --text-color: black;
+    --background-color: #fefbee;
 }
-
-
-/* =========================
-   RESET E CONFIGURAÇÕES GERAIS
-   ========================= */
 *{
-    font-family: roboto, open-sans, sans-serif, Arial, Helvetica, sans-serif;
+    font-family: roboto, sans-serif, Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
 }
-
-html{
-    overflow-x: hidden; /* ALTEREI */
-}
-
 body{
-    background-color:#0c0c0c;
+    background-color: var(--background-color);
     color: var(--text-color);
-    margin: 0;
-    overflow-x: hidden; /* ALTEREI */
+}
+
+.span{
+    color: var(--dark-brown);
+}
+
+img{
+    max-width: 100%;
+    display: block;
 }
 
 
-/* =========================
-   MENU DE NAVEGAÇÃO
-   ========================= */
+/*menu de navegação*/
 .menu-hamburguer{
     display: none;
-    background: transparent; /* ALTEREI */
-    border: none; /* ALTEREI */
-    cursor: pointer; /* ALTEREI */
+    
 }
-
 .menu{
-    background-color: var(--primary-color);
+    background-color: var(--background-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-weight: 600;
-    font-size: 13px;
+    font-size: 15px;
     position: fixed;
     width: 100%;
-    top: 0;
-    z-index: 1000;
-
-    padding: 12px 5%; /* ALTEREI */
 }
 
-
-/* LISTA DO MENU */
 .menu-list{
     color: var(--text-color);
     list-style: none;
@@ -69,32 +52,29 @@ body{
     padding-right: 25px;
     cursor: pointer;
 }
-
-.menu-item{
+.menu-list a{
+    text-decoration: none;
     color: var(--text-color);
 }
 
-/* BOTÃO DO MENU */
-.menu-btn a{
-    text-decoration: none;
-    color:#0c0c0c
+.menu-list a:hover{
+    color: var(--dark-brown);
 }
 
 .menu-btn{
-    background-color: var(--secondary-color);
-    padding: 10px 15px;
-    border-radius: 8px;
-    border-style: none;
-    font-weight: bold;
-    font-size: 13px;
+    text-decoration: none;
+    border: 1px solid var(--dark-brown); 
+    color: var(--dark-brown); 
+    background-color: var(--background-color);
+    padding: 8px 15px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
 }
 
 .menu-btn:hover{
-    background-color: #c9a205;
-    transition: 0.1s;
-    cursor: pointer;
+    border: 2px solid var(--dark-brown);
 }
-
 
 /* =========================
    SEÇÃO TOPO (IMAGEM)
@@ -104,9 +84,9 @@ body{
 
     background-image:
     linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-    url(/img/foto\ teste\ bruna.jpeg);
+    
 
-    background-size: cover;
+    background-size cover;
     background-position: center;
     background-repeat: no-repeat;
 
@@ -209,6 +189,7 @@ body{
     gap: 25px;
 
     align-items: stretch;
+    text-align: center;
 }
 
 .card{
