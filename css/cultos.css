@@ -1,0 +1,326 @@
+:root{
+    --light-gray: #898989;
+    --dark-gray: #545454;
+    --dark-brown: #683c11;
+    --light-brown: #936037;
+    --text-color: black;
+    --background-color: #fefbee;
+}
+*{
+    font-family: roboto, open-sans, sans-serif, Arial, Helvetica, sans-serif;
+     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:var(--background-color);
+    color: var(--text-color);
+    font-family: roboto, open-sans, sans-serif;
+}
+.span{
+    color: var(--dark-brown);
+}
+
+/*style menu de navegação*/
+.menu-hamburguer{
+    display: none;
+}
+
+.menu{
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    font-size: 15px;
+    position: fixed;
+    width: 100%;
+}
+
+.menu-list{
+    color: var(--text-color);
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin-left: auto;
+    padding-right: 25px;
+    cursor: pointer;
+    
+}
+
+.menu-list a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.menu-list a:hover{
+    cursor: pointer;
+    color: var(--dark-brown);
+}
+.menu-btn{
+    text-decoration: none;
+    background-color:var(--background-color);
+    color: var(--dark-brown);
+    border: 1px solid var(--dark-brown);
+    padding: 8px 15px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.menu-btn:hover{
+    border: 2px solid  var(--dark-brown);
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+/*section hero*/
+.hero-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 100px 20px 20px;
+}
+
+
+.hero-title{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+.hero-title h1{
+    color: var(--light-brown);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.hero-title h2{
+    color: var(--dark-brown);
+    font-size: 40px;
+}
+
+.hero-title p{
+    color: var(--light-brown);
+    font-size: 18px;
+
+}
+
+.hero-image{
+    border-radius: 10px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+
+
+
+/*style cultos*/
+.versiculo{
+    text-align: center;
+    padding: 50px 10px;
+    font-size: 25px;
+    color: var(--light-brown);
+    font-weight: bold;
+    font-style: italic;
+}
+
+.container-cultos{
+    color: var(--text-color);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);   
+    margin: 15px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    height: 280px;
+    width: 230px;
+
+}
+
+.container-cultos h3{
+    color: var(--light-brown);
+    font-size: 22px;
+    
+}
+
+.container-cultos p{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.cultos-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.title-section{
+    padding-top: 80px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 28px;
+    color: var(--dark-brown);
+}
+
+/*section cultos online*/
+.online-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-top: 80px;
+}
+.online-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.online-title h3{
+    font-size: 35px;
+    color: var(--dark-brown);
+}
+
+.online-title p{
+    font-size: 20px;
+    color: var(--light-brown);
+}
+
+.online-title a{
+    text-decoration: none;
+    background-color: var(--background-color);
+    color: var(--dark-brown);
+    border: 1px solid var(--dark-brown);
+    padding: 8px 15px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.online-title a:hover{
+    transform: scale(1.05);
+    transition: 0.2s;
+    cursor: pointer;
+}
+/*style rodapé*/
+
+#divisor-footer{
+    text-align: center;
+    color: var(--light-gray);
+    padding-top: 20px;
+}
+
+#divisor-footer::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform:translateX(-50%);
+    width: 90%;
+    height: 1.5px;
+    background-color: var(--text-color);
+
+}
+.rodape{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+   
+}
+
+.div-rodape a{
+    text-decoration: none;
+    padding: 15px;
+    
+
+}
+
+/*responsividade MEDIA QUERY*/
+
+@media (max-width: 768px){
+
+.logo{
+    width:100px;
+}
+
+.menu{
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.menu-hamburguer{
+    display: block;
+    background-color: var(--background-color);
+    border: none;
+
+}
+
+
+.menu-list.active{
+    display: flex;
+}
+
+.menu-list{
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.menu-btn{
+    display: none;
+}
+
+
+.hero-image{
+    display: none;
+}
+
+.cultos-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-cultos{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    gap: 20px;
+    width: 90%;
+    height: 90%;
+}
+.online-title{
+    margin: 10px;
+}
+
+.online-section{
+    flex-direction:column-reverse;
+    gap: 30px;
+
+}
+
+.online-section iframe{
+    height: max-content;
+    width: max-content;
+
+}
+.rodape{
+    flex-direction: column;
+    gap: 10px;
+}
+}
+
+
