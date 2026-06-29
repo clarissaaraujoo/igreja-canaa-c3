@@ -41,8 +41,6 @@ main h1{
     font-size: 15px;
     position: fixed;
     width: 100%;
-    border-bottom: 2px solid var(--light-gray);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .menu-list{
@@ -78,18 +76,13 @@ main h1{
     border: 2px solid var(--dark-brown);
 }
 
-.logo{
-    width: 100px;
-}
 
-/* =========================
-   HERO
-========================= */
+/*--Style do hero--*/
 .hero{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 500px;
+    gap: 300px;
     padding: 100px 25px 50px;
     flex-wrap: wrap;
 }
