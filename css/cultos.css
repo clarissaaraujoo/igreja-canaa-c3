@@ -303,12 +303,16 @@ body{
 .menu-btn{
     display: none;
 }
-
-
+.btn-cultos{
+    width: 200px;
+}
 .hero-image{
     display: none;
 }
 
+.hero-title h2{
+    font-size: 30px;
+}
 .cultos-section{
     display: flex;
     flex-direction: column;
@@ -324,8 +328,10 @@ body{
     width: 90%;
     height: 90%;
 }
+
 .online-title{
     margin: 10px;
+    text-align: center;
 }
 
 .online-section{
@@ -335,8 +341,8 @@ body{
 }
 
 .online-section iframe{
-    height: max-content;
-    width: max-content;
+    height: 250px;
+    width: 80%;
 
 }
 .rodape{
