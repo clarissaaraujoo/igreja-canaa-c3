@@ -92,18 +92,18 @@ body{
 }
 .hero-title h1{
     color: var(--light-brown);
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
 }
 
 .hero-title h2{
     color: var(--dark-brown);
-    font-size: 40px;
+    font-size: 45px;
 }
 
 .hero-title p{
     color: var(--light-brown);
-    font-size: 18px;
+    font-size: 22px;
 
 }
 
@@ -121,8 +121,9 @@ body{
     padding: 50px 10px;
     font-size: 25px;
     color: var(--light-brown);
-    font-weight: bold;
+    font-weight: 600;
     font-style: italic;
+    width: 350px;
 }
 
 .container-cultos{
@@ -163,7 +164,7 @@ body{
     padding-top: 80px;
     padding-bottom: 20px;
     text-align: center;
-    font-size: 28px;
+    font-size: 35px;
     color: var(--dark-brown);
 }
 
