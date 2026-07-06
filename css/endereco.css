@@ -120,7 +120,7 @@ main h1{
 .endereco iframe{
     border: 1px solid;
     border-radius: 8px;
-     width: 100%;
+    width: 100%;
     max-width: 600px;
 }
 
@@ -132,6 +132,17 @@ main h1{
    gap: 50px;
 
 }  
+
+.titulos-endereco h2{
+    text-align: center;
+    font-size: 25px;
+}
+
+.titulos-endereco p{
+    text-align: center;
+    font-size: 18px;
+
+}
 
 /*style rodapé*/
 
@@ -212,6 +223,10 @@ main h1{
     display: none;
 }
 
+#titulo-principal{
+    margin: 25px;
+}
+
 #container-endereco,
 .endereco,
 .titulos-endereco{
@@ -225,7 +240,7 @@ main h1{
 .mapa{
     width: 100%;
     max-width: 600px;
-    height: 500px;
+    height: 300px;
 }
 
 .rodape{
